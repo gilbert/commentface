@@ -1,0 +1,4 @@
+(function () {
+  var scoreText = "<%= pluralize @comment.score, 'like' %>";
+  $('.comment[data-id="<%= @comment.id %>"] .score').text(scoreText);
+})();
